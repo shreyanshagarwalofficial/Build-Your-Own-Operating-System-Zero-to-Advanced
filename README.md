@@ -1,8 +1,4 @@
 # Build Your Own Operating System — Zero to Advanced
-
-> A free-first, project-driven curriculum for learning how computers start, how kernels work, and how to build a bootable educational operating system from the ground up.
-
-**Research review date:** 2026-10-25  
 **Primary implementation path:** x86-64 + C + a maintained bootloader + QEMU  
 **Alternative paths:** RISC-V + C; Rust + a maintained bootloader  
 **Repository type:** Learning roadmap and curated resource directory
@@ -568,35 +564,7 @@ A host compiler normally targets the host operating system and its runtime conve
 
 Do not copy compiler flags from a tutorial without understanding its target triple, CPU mode, ABI, boot protocol, and linker layout. Keep a build log and document the versions that actually work.
 
-### Suggested repository structure
 
-```text
-your-os/
-├── README.md
-├── LICENSE
-├── docs/
-│   ├── architecture.md
-│   ├── boot-flow.md
-│   ├── memory-map.md
-│   ├── syscall-abi.md
-│   ├── testing.md
-│   └── decisions/
-├── boot/
-├── kernel/
-│   ├── arch/
-│   ├── mm/
-│   ├── interrupt/
-│   ├── sched/
-│   ├── drivers/
-│   ├── fs/
-│   └── syscall/
-├── user/
-├── tests/
-├── scripts/
-└── .github/workflows/
-```
-
-This is an illustrative structure, not a requirement. Start smaller and split directories when the architecture benefits from it.
 
 ---
 
